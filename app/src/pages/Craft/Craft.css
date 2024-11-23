@@ -1,1 +1,14 @@
-/*# sourceMappingURL=Craft.css.map */
+.hero-section {
+  margin: 0 5rem;
+  border: 0.0625rem solid #E1DBDB;
+  border-top: none;
+}
+.hero-section__main {
+  text-align: left;
+  padding: 200px 0;
+  margin-left: 50%;
+}
+.hero-section__add {
+  text-align: center;
+  margin-top: 2rem;
+}/*# sourceMappingURL=Craft.css.map */

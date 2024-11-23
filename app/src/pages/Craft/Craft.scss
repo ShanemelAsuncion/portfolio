@@ -1,0 +1,17 @@
+.hero-section {
+    margin: 0 5rem;
+    border: 0.0625rem solid #E1DBDB;
+    border-top: none;
+  
+    &__main {
+      text-align: left;
+      padding: 200px 0;
+      margin-left: 50%;
+    }
+  
+    &__add {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+  
