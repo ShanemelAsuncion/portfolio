@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+  border-bottom: 0.0625rem solid #E1DBDB;
+  border-left: 0.0625rem solid #E1DBDB;
+  border-right: 0.0625rem solid #E1DBDB;
+}
+.navbar__logo-item {
+  width: 3.75rem;
+}
+.navbar__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.25rem;
+}
+.navbar__button {
+  margin: 0;
+  height: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+.navbar__button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}/*# sourceMappingURL=NavBar.css.map */
