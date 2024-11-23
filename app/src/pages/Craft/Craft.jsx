@@ -11,8 +11,8 @@ function Craft() {
             <h1>ASUNCION</h1>
           </div>
           <div className='hero-section__subtitle'>
-            <h4>Full Stack Developer</h4>
-            <h4>Based in Edmonton</h4>
+            <h3>Full Stack Developer</h3>
+            <h3>Based in Edmonton</h3>
             <p>PORTFOLIO_2024</p>
           </div>
         </div>
@@ -22,7 +22,7 @@ function Craft() {
         </div>
       </div>
 
-      
+
       <div className='craft-section'>
         
       </div>
