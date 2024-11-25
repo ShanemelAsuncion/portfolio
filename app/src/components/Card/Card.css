@@ -1,1 +1,27 @@
-/*# sourceMappingURL=Card.css.map */
+.card {
+  margin: 0;
+  padding: 40px;
+  border: 0.0625rem solid #E1DBDB;
+  border-top: none;
+}
+.card__ind p {
+  margin-top: 0%;
+}
+.card__tags {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.card__button button {
+  margin: 0;
+  height: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+.card__button button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}/*# sourceMappingURL=Card.css.map */

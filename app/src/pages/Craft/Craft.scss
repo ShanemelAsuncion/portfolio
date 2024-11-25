@@ -10,13 +10,82 @@
     }
   
     &__add {
-      text-align: center;
       margin-top: 2rem;
+      display: flex;
+      margin-left: 42.5%;
+      justify-content: space-between;
     }
 
     &__subtitle p {
         font-weight: 100;
     }
+    
+    &__socials{
+      display: flex;
+      justify-content: center;
+      gap:1.5rem;
+      margin-right: 3.125rem;
+      font-size: 0.875rem;
+    }
   }
+
+  .craft-section{
+    margin: 0 5rem;
+
+    &__title{
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      border: 0.0625rem solid #E1DBDB;
+      border-top: none;
+
+      &-text{
+        border-top: 1px solid black;
+        border-width: 3px;
+        padding: 2px;
+      }
+    }
+
+    &__projects{
+      border: 0.0625rem solid #E1DBDB;
+      border-top: none;
+    }
+  }
+
+  .footer-section {
+    margin: 0 5rem;
+    background-color: #181717;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
   
+    &__socials {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between social links */
+      margin-top: 20px; /* Optional spacing above socials */
+    }
+  
+    &__socials p {
+      color: #D9D9D9;
+      font-size: 1rem; /* Adjust text size */
+      cursor: pointer; /* Add hover effect */
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: white; /* Change color on hover */
+      }
+    }
+
+    &__copyright{
+      text-align: left;
+      margin-left: 65%;
+      padding-top: 60px;
+      padding-bottom: 40px;
+
+      &-text{
+        padding-top: 20px;
+      }
+    }
+  }
   
