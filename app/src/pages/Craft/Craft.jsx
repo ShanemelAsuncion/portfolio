@@ -1,6 +1,7 @@
 import React from 'react'
 import './Craft.scss'
 import Card from '../../components/Card/Card';
+import logo from "../../assets/logos/logo.png"
 
 function Craft() {
 
@@ -108,8 +109,12 @@ function Craft() {
         
         <div className='footer-section__copyright'>
           <p>DESIGNED AND DEVELOPED BY SHANEMEL_ASUNCION</p>
-          <p>MADE WITH LOVE AND ESPRESSO SHOTS</p>
+          <p>MADE WITH LOVE AND ESPRESSO SHOTS 💙☕</p>
           <p className='footer-section__copyright-text'>© 2024 ALL RIGHTS RESERVED</p>
+        </div>
+
+        <div className='footer-section__logo'>
+          <img src={logo} className='footer-section__logo'/>
         </div>
       </div>
 

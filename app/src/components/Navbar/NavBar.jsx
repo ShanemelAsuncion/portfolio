@@ -16,6 +16,9 @@ function NavBar() {
         <div className='navbar__link'>
           <Link to="/about">About</Link>
         </div>
+        <div className='navbar__link'>
+          <Link to="/play">Playground</Link>
+        </div>
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
         <button className='navbar__button'>
         
