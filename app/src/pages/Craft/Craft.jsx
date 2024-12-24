@@ -73,7 +73,7 @@ function Craft() {
 
       <div className='craft-section'>
         <div className='craft-section__title'>
-          <h3 className='craft-section__title-text'>Craft</h3>
+          <h3 className='craft-section__title-text'>Featured</h3>
         </div>
 
         <div className="craft-section__projects">
