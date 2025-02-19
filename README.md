@@ -16,39 +16,35 @@ This is a personal portfolio website showcasing my projects, skills, and profess
 - Modern UI/UX
 
 ## Project Structure
-portfolio/
-├── app/
-│   ├── public/
-│   │   ├── index.html
-│   │   └── ...
-│   ├── src/
-│   │   ├── assets/
-│   │   │   └── images, icons, etc.
-│   │   ├── components/
-│   │   │   ├── Header/
-│   │   │   ├── Footer/
-│   │   │   └── ...
-│   │   ├── pages/
-│   │   │   ├── Home/
-│   │   │   ├── Projects/
-│   │   │   └── ...
-│   │   ├── styles/
-│   │   │   ├── global.scss
-│   │   │   └── variables.scss
-│   │   ├── App.js
-│   │   ├── App.scss
-│   │   └── index.js
-│   ├── package.json
-│   ├── requirements.txt
-│   └── README.md
-└── README.md
 
-### Directory Breakdown
-- `public/`: Static assets and HTML template
-- `src/assets/`: Media files like images and icons
-- `src/components/`: Reusable React components
-- `src/pages/`: Top-level page components
-- `src/styles/`: Global and shared SCSS styles
+### Directory Overview
+```
+portfolio-1/
+│
+├── app/                    # Main React application
+│   ├── public/             # Public assets and HTML template
+│   │   └── index.html
+│   │
+│   ├── src/                # Source code
+│   │   ├── assets/         # Static assets (images, icons)
+│   │   ├── components/     # Reusable React components
+│   │   ├── pages/          # Page-level components
+│   │   ├── styles/         # Global and shared styles
+│   │   ├── App.js          # Main React application component
+│   │   └── index.js        # Entry point
+│   │
+│   ├── package.json        # Project dependencies and scripts
+│   └── requirements.txt    # Additional requirements
+│
+└── README.md               # Project documentation
+```
+
+### Key Directories
+- `app/public/`: Contains the HTML template and static files
+- `app/src/assets/`: Stores media files and static resources
+- `app/src/components/`: Reusable React UI components
+- `app/src/pages/`: Top-level page components
+- `app/src/styles/`: Global SCSS and styling configurations
 
 ## Getting Started
 
