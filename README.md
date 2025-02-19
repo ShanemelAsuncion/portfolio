@@ -15,6 +15,41 @@ This is a personal portfolio website showcasing my projects, skills, and profess
 - Interactive navigation
 - Modern UI/UX
 
+## Project Structure
+portfolio/
+├── app/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── ...
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── images, icons, etc.
+│   │   ├── components/
+│   │   │   ├── Header/
+│   │   │   ├── Footer/
+│   │   │   └── ...
+│   │   ├── pages/
+│   │   │   ├── Home/
+│   │   │   ├── Projects/
+│   │   │   └── ...
+│   │   ├── styles/
+│   │   │   ├── global.scss
+│   │   │   └── variables.scss
+│   │   ├── App.js
+│   │   ├── App.scss
+│   │   └── index.js
+│   ├── package.json
+│   ├── requirements.txt
+│   └── README.md
+└── README.md
+
+### Directory Breakdown
+- `public/`: Static assets and HTML template
+- `src/assets/`: Media files like images and icons
+- `src/components/`: Reusable React components
+- `src/pages/`: Top-level page components
+- `src/styles/`: Global and shared SCSS styles
+
 ## Getting Started
 
 ### Prerequisites
