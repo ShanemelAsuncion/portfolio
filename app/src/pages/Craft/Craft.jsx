@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './Craft.scss'
 import Card from '../../components/Card/Card';
 import logo from "../../assets/logos/logo.png"
@@ -31,18 +31,83 @@ function Craft() {
       id: 4
     },
   ];
-  
 
+  // Animation
+  const [isVisible, setIsVisible] = useState(false);
+  const [subtitle, setSubtitle] = useState('');
+  const firstName = "SHANEMEL";
+  const lastName = "ASUNCION";
+  const subtitleText = "Full Stack Developer";
+
+  useEffect(() => {
+    const startAnimation = () => {
+      setIsVisible(true); // Trigger animation
+      setTimeout(() => {
+        setIsVisible(false); // Reset visibility after animation duration
+      }, 7000); // Match this duration with your animation duration
+    };
+
+    startAnimation(); // Start the animation immediately
+
+    const interval = setInterval(() => {
+      startAnimation(); // Repeat the animation every 5 seconds
+    }, 8000); // 5000 milliseconds = 5 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
+ 
+  useEffect(() => {
+    let index = 0;
+    let currentText = '';
+    let timerId;
+  
+    const typeCharacter = () => {
+      if (index < subtitleText.length) {
+        currentText += subtitleText[index];
+        setSubtitle(currentText);
+        index++;
+        timerId = setTimeout(typeCharacter, 150);
+      } else {
+        timerId = setTimeout(() => {
+          setSubtitle('');
+          index = 0;
+          currentText = '';
+          typeCharacter();
+        }, 3000);
+      }
+    };
+  
+    typeCharacter();
+  
+    // Cleanup: clear any pending timeout when the component unmounts
+    return () => clearTimeout(timerId);
+  }, [subtitleText]);
+  
+  
   return (
     <div className='container'>
       <div className='hero-section'>
         <div className='hero-section__main'>
-          <div className='hero-section__title'>
-            <h1>SHANEMEL</h1>
-            <h1>ASUNCION</h1>
+        <div className='hero-section__title'>
+          <h1>
+            {firstName.split('').map((letter, index) => (
+              <span key={index} className={`letter ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: `${index * 100}ms` }}>
+                {letter}
+              </span>
+            ))}
+            </h1>
+            
+            <h1>
+            {lastName.split('').map((letter, index) => (
+              <span key={index} className={`letter ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: `${index * 100}ms` }}>
+                {letter}
+              </span>
+            ))}
+            </h1>
           </div>
           <div className='hero-section__subtitle'>
-            <h3>Full Stack Developer</h3>
+            <h3>{subtitle}</h3>
             <h3>Based in Edmonton</h3>
             <p>PORTFOLIO_2024</p>
           </div>
